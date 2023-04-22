@@ -1,0 +1,55 @@
+.action {
+    @media screen and (min-width: 1200px) {
+        padding: 100px 0;
+    }
+
+    overflow: hidden;
+    background-color: #1BCAD7;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    &__title {
+        color: #fff;
+        margin-bottom: 1.5rem;
+    }
+
+    &__link {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        svg {
+            margin-left: 1rem;
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        pointer-events: none;
+        z-index: -1;
+
+
+        &--left {
+            left: -80px;
+            bottom: -100px;
+        }
+
+        &--right {
+            right: -100px;
+            top: -100px;
+        }
+
+        &--center {
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

@@ -1,0 +1,108 @@
+.connect {
+    @media screen and (min-width: 1200px) {
+        padding: 120px 0;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 0.75rem;
+    }
+
+    &__subtitle {
+        text-align: center;
+        margin-bottom: 3rem;
+        max-width: 370px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__form {
+        max-width: 450px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (max-width: 991px) {
+        margin-bottom: 2rem;
+    }
+}
+
+.form {
+    &__row {
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    &__input {
+        margin-right: 1rem;
+        width: 100%;
+    }
+
+    &__agree {
+        color: rgba(0, 0, 0, 0.4);
+        font-size: 13px;
+
+        &-input {
+            // width: 0;
+            // height: 0;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+
+        &-label {
+            cursor: pointer;
+            position: relative;
+            display: block;
+
+            a {
+                color: inherit;
+                text-decoration: none;
+
+                &:hover {
+                    color: inherit;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &-checkbox {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border: 1.2px solid rgba(41, 45, 50, 0.4);
+            position: relative;
+            border-radius: 5px;
+            vertical-align: middle;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-image: url("data:image/svg+xml,%3Csvg width='8' height='6' viewBox='0 0 8 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.16667 2.99995L3.05334 4.88661L6.83334 1.11328' stroke='%23292D32' stroke-opacity='0.4' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                display: none;
+            }
+        }
+
+        &-input:checked+&-checkbox:before {
+            display: block;
+        }
+    }
+
+
+}
+
+.input {
+    padding: 1rem 2rem;
+    border: 1px solid #D7D7D7;
+}

@@ -1,0 +1,200 @@
+// GENERAL PROJECT STYLES
+:root {
+    scroll-behavior: unset !important;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: unset !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: unset !important;
+    }
+}
+
+html {
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    font-weight: 700;
+    color: #333;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.75rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width: 1199px) {
+    h1 {
+        font-size: 3.25rem;
+    }
+
+    h2 {
+        font-size: 2.75rem;
+    }
+
+    h3 {
+        font-size: 2.25rem;
+    }
+
+    h4 {
+        font-size: 1.75rem;
+    }
+
+
+}
+
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+
+
+}
+
+@media screen and (max-width: 575px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    transition: all 400ms;
+    text-align: center;
+
+    &--primary {
+        border: 1px solid #1BCAD7;
+        background: #1BCAD7;
+        color: #fff;
+
+        &:hover {
+            border: 1px solid #1b8cd7;
+            background: #1b8cd7;
+            color: #fff;
+        }
+    }
+
+    &--light {
+        border: 1px solid #fff;
+        background: #fff;
+        color: #1BCAD7;
+
+        &:hover {
+            border: 1px solid #1b8cd7;
+            background: #1b8cd7;
+            color: #fff;
+        }
+    }
+
+    &--inversion {
+        border: 1px solid #383838;
+        background: transparent;
+        color: #383838;
+
+        &:hover {
+            background: #383838;
+            color: #fff;
+        }
+    }
+}
+
+.block {
+    @media screen and (max-width: 1199px) {
+        padding: 100px 0;
+    }
+
+    @media screen and (max-width: 991px) {
+        padding: 80px 0;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 60px 0;
+    }
+
+    @media screen and (max-width: 575px) {
+        padding: 40px 0;
+    }
+}
+
+.purple {
+    color: #9044D6;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.weight-smallest {
+    font-weight: 500;
+}

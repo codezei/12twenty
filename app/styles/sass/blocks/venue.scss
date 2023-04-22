@@ -1,0 +1,49 @@
+.venue {
+    @media screen and (min-width: 1200px) {
+        padding: 120px 0;
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__img {
+        margin-bottom: 2rem;
+    }
+
+    &__row {
+        margin-bottom: 2.5rem;
+    }
+
+    &__col {
+        margin-top: 1rem;
+    }
+
+    &-info {
+        &__title {
+            margin-bottom: 0.7rem;
+        }
+
+        &__text {
+            margin-bottom: 0;
+        }
+    }
+
+    &__btn {
+        display: block;
+        max-width: 270px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+        &__img {
+            margin-bottom: 1rem;
+        }
+
+        &__row {
+            margin-bottom: 1.5rem;
+        }
+    }
+}

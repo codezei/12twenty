@@ -1,0 +1,115 @@
+.promo {
+    padding: 170px 0;
+    background-color: #FAFAFA;
+    background-image: url(../images/dist/promo-bg.png);
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &__row {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin-bottom: 2.5rem;
+    }
+
+    &__start {
+        color: #9044D6;
+        background: linear-gradient(135deg, #EA2FBC 0%, #9044D6 55.97%, #1BCAD7 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-weight: 500;
+        margin-bottom: 4rem;
+
+        &-date {
+            margin-right: 2rem;
+            display: inline-block;
+        }
+
+        &-location {
+            display: inline-block;
+        }
+
+        &-icon {
+            vertical-align: middle;
+        }
+
+    }
+
+    &__scroll {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        text-decoration: none;
+
+        &-dot {
+            animation-name: moveScroll;
+            animation-duration: 2000ms;
+            animation-iteration-count: infinite;
+        }
+
+        &-text {
+            display: block;
+            color: rgba(80, 80, 80, 0.4);
+        }
+    }
+
+    @media screen and (max-width: 1199px) {
+        padding: 120px 0;
+    }
+
+    @media screen and (max-width: 991px) {
+        text-align: center;
+
+        &__logo {
+            margin-bottom: 1rem;
+        }
+
+        &__start {
+            margin-bottom: 1.5rem;
+        }
+
+        &__col {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        &__row {
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        &__start {
+            &-date {
+                margin-right: 0;
+                margin-bottom: 0.5rem;
+                display: block;
+            }
+
+            &-location {
+                display: block;
+            }
+        }
+    }
+}
+
+@keyframes moveScroll {
+    from {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
