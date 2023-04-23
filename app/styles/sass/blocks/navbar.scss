@@ -45,15 +45,19 @@
     }
 
     @media screen and (max-width: 1399px) {
-        left: calc((100% - 1140px) / 2 - 15px);
+        left: calc((100% - 1140px) / 2 - 5px);
     }
 
     @media screen and (max-width: 1199px) {
-        left: calc((100% - 960px) / 2 - 15px);
+        left: calc((100% - 960px) / 2 - 5px);
+    }
+
+    @media screen and (max-width: 991px) {
+        left: calc((100% - 720px) / 2 - 5px);
     }
 
     @media screen and (max-width: 767px) {
-        left: calc((100% - 720px) / 2 - 15px);
+        left: calc((100% - 540px) / 2 - 5px);
     }
 
     @media screen and (max-width: 575px) {
