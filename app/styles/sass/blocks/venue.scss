@@ -19,6 +19,7 @@
             position: absolute;
             top: -15px;
             right: -15px;
+            max-width: 30%;
         }
     }
 
@@ -26,9 +27,6 @@
         margin-bottom: 2.5rem;
     }
 
-    &__col {
-        margin-top: 1rem;
-    }
 
     &-info {
         &__title {
@@ -61,7 +59,7 @@
         }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         &__title {
             margin-bottom: 1.5rem;
         }
@@ -72,6 +70,12 @@
 
         &__row {
             margin-bottom: 1.5rem;
+        }
+
+        &__col {
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
         }
     }
 }

@@ -24,7 +24,15 @@
     }
 
     @media screen and (max-width: 991px) {
-        margin-bottom: 2rem;
+        &__subtitle {
+            margin-bottom: 2rem;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        &__subtitle {
+            margin-bottom: 1.5rem;
+        }
     }
 }
 
