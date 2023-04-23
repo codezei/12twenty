@@ -16,6 +16,16 @@
         margin-bottom: 2.5rem;
     }
 
+    &__img {
+        margin-bottom: 100px;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 100px;
+    }
+
     &__start {
         color: #9044D6;
         background: linear-gradient(135deg, #EA2FBC 0%, #9044D6 55.97%, #1BCAD7 100%);
@@ -37,6 +47,7 @@
 
         &-icon {
             vertical-align: middle;
+            width: 32px;
         }
 
     }
@@ -63,6 +74,10 @@
 
     @media screen and (max-width: 1199px) {
         padding: 120px 0;
+
+        &__img {
+            margin-bottom: 80px;
+        }
     }
 
     @media screen and (max-width: 991px) {
@@ -83,6 +98,15 @@
         }
 
         &__row {
+            justify-content: center;
+        }
+
+        &__img {
+            margin-bottom: 40px;
+        }
+
+        &__social {
+            margin-right: 0;
             justify-content: center;
         }
     }
@@ -111,5 +135,24 @@
     to {
         opacity: 0;
         transform: translateY(20px);
+    }
+}
+
+.social {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        text-decoration: none !important;
+
+        &:hover {
+            svg path {
+                fill-opacity: 0.8;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 26px;
+        }
     }
 }
